@@ -52,9 +52,10 @@ Setiap unit memiliki jumlah host berbeda, sehingga diperlukan **perhitungan subn
 
 Seluruh jaringan hasil VLSM dapat diagregasi menjadi blok besar berikut:
 
-| Aggregated Network | Mask | Prefix | Host Range |
-|:-|:-|:-:|:-|
-| 10.129.0.0 | 255.255.248.0 | /21 | 10.129.0.1 – 10.129.7.254 |
+| Aggregated Network | Jumlah IP | Prefix | Host Range | Keterangan |
+|:-|:-|:-:|:-|:-|
+| 10.129.0.0 | 1024 | /22 | 10.129.0.0 – 10.129.3.255 | Gabungan Sekretariat–Pengawas |
+| 10.129.4.0 | 16 | /28 | 10.129.4.0 – 10.129.4.15 | Gabungan Server + Link P2P |
 
 
 ---
